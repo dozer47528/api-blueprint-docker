@@ -5,7 +5,7 @@ then
         git clean -f
         git pull
 else
-        git clone https://github.com/dozer47528/api-blueprint-test.git /opt/api-blueprint
+        git clone $repository /opt/api-blueprint
         cd /opt/api-blueprint
 fi
 

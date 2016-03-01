@@ -1,2 +1,2 @@
 nginx
-nohup node ./hock.js > /dev/null &
+node /usr/local/bin/hock.js
