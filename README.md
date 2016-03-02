@@ -45,3 +45,4 @@ Add webhook in your repository settings
 * Support private repository
 * Support customize aglio style
 * Add webhook secret check
+* Add log output
