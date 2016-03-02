@@ -1,6 +1,6 @@
 FROM centos
 
-RUN yum update && yum install -y epel-release && yum update && yum install -y node npm make nginx git
+RUN yum install -y epel-release && yum update -y && yum install -y node npm make nginx git
 RUN npm install -g aglio drakov
 
 COPY scripts/startup.sh /usr/local/bin/
