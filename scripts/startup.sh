@@ -1,3 +1,3 @@
 nginx
-nohup drakov -f "/opt/api-blueprint/*.apib" --public > /dev/null &
+drakov -f "/opt/api-blueprint/*.apib" --public &
 node /usr/local/bin/webhook.js

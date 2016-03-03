@@ -32,9 +32,11 @@ When you first run or call the webhook:
 &nbsp;
 
 ## How to config auto deploy
-Add webhook in your repository settings
+The server will auto reload every 5 minutes.
 
-![settings](images/webhook.png)
+And you can add webhook in your repository settings.
+
+![settings](https://raw.githubusercontent.com/dozer47528/api-blueprint-docker/master/images/webhook.png)
 
 &nbsp;
 
@@ -44,5 +46,3 @@ Add webhook in your repository settings
 
 * Support private repository
 * Support customize aglio style
-* Add webhook secret check
-* Add log output
