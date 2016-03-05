@@ -12,6 +12,26 @@ Just support `https`, don't use `ssh`, `ssh` need authorization.
 
 &nbsp;
 
+#### How change `aglio` parameter
+Add this parameter like this:`-e "aglio=--theme-template triple"`
+
+Full command like this:
+
+`docker run --name test -e "aglio=--theme-template triple" -e "repository=https://github.com/dozer47528/api-blueprint-test.git" -p 80:80 -p 8080:8080 -p 3000:3000 -d dozer47528/api-blueprint-docker`
+
+aglio document: [https://github.com/danielgtaylor/aglio#executable](https://github.com/danielgtaylor/aglio#executable)
+
+&nbsp;
+
+#### How to support private repositiry?
+Create ssh keys in your host and add parameter like this:`-v ~/.ssh:/root/.ssh`
+
+Full command like this:
+
+`docker run --name test -v ~/.ssh:/root/.ssh -e "repository=https://github.com/dozer47528/api-blueprint-test.git" -p 80:80 -p 8080:8080 -p 3000:3000 -d dozer47528/api-blueprint-docker`
+
+&nbsp;
+
 #### Ports explain:
 
 * `80` : document server
@@ -37,12 +57,3 @@ The server will auto reload every 5 minutes.
 And you can add webhook in your repository settings.
 
 ![settings](https://raw.githubusercontent.com/dozer47528/api-blueprint-docker/master/images/webhook.png)
-
-&nbsp;
-
-## What's next?
-
-&nbsp;
-
-* Support private repository
-* Support customize aglio style

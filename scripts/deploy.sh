@@ -9,6 +9,6 @@ else
         cd /opt/api-blueprint
 fi
 
-find . -name "*.apib" | sed 's/.apib//' | xargs -i -t aglio -i {}.apib --theme-template triple -o {}.html
+find . -name "*.apib" | sed 's/.apib//' | xargs -i -t aglio -i {}.apib `echo $aglio` -o {}.html
 rm -rf /usr/share/nginx/html/*
 cp -R * /usr/share/nginx/html/
