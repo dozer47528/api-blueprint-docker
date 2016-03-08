@@ -1,7 +1,8 @@
-Api Blueprint Docker
-=================
-
-[Docker Hub](https://hub.docker.com/r/dozer47528/api-blueprint-docker/)
+# Api Blueprint Docker
+[![Docker Stars](https://img.shields.io/docker/stars/dozer47528/api-blueprint-docker.svg)][https://hub.docker.com/r/dozer47528/api-blueprint-docker/]
+[![Docker Pulls](https://img.shields.io/docker/pulls/dozer47528/api-blueprint-docker.svg)][https://hub.docker.com/r/dozer47528/api-blueprint-docker/]
+[![Image Size](https://img.shields.io/imagelayers/image-size/dozer47528/api-blueprint-docker/latest.svg)](https://imagelayers.io/?images=dozer47528/api-blueprint-docker:latest)
+[![Image Layers](https://img.shields.io/imagelayers/layers/dozer47528/api-blueprint-docker/latest.svg)](https://imagelayers.io/?images=dozer47528/api-blueprint-docker:latest)
 
 ## How to use?
 `docker run --name test -e "repository=https://github.com/dozer47528/api-blueprint-test.git" -p 80:80 -p 8080:8080 -p 3000:3000 -d dozer47528/api-blueprint-docker`
