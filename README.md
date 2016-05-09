@@ -9,8 +9,6 @@
 
 Replace the `https://github.com/dozer47528/api-blueprint-test.git` with your own repository.
 
-Just support `https`, don't use `ssh`, `ssh` need authorization.
-
 &nbsp;
 
 #### How change `aglio` parameter
